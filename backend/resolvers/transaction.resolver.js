@@ -2,7 +2,7 @@ import Transaction from "../models/transaction.model.js";
 
 const transactionResolver = {
   Query: {
-    transactions: async (_, _, contex) => {
+    transactions: async (_, __, contex) => {
       try {
         if (!contex.getUsrizeder()) {
           throw new Error("Unatho");
