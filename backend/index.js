@@ -20,8 +20,11 @@ import { connectDb } from "./db/connectDb.js";
 import { configurePassport } from "./passport/passport.config.js";
 
 dotenv.config({ path: "./config.env" });
+
 configurePassport();
+
 const app = express();
+
 const httpServer = http.createServer(app);
 
 const MongoDBStroe = connectMongo(session);

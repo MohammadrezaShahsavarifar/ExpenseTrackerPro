@@ -1,5 +1,4 @@
 import User from "../models/user.model.js";
-import { users } from "../ShiteData/data.js";
 import bcrypt from "bcryptjs";
 
 const userResolver = {
