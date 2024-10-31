@@ -63,7 +63,7 @@ await server.start();
 
 const port = process.env.PORT || 4000;
 app.use(
-  "/",
+  "/graphql",
   cors({
     origin: "http://localhost:3000",
     credentials: true,
@@ -77,4 +77,4 @@ app.use(
 await new Promise((resolver) => httpServer.listen({ port }, resolver));
 await connectDb();
 
-console.log(`your server run op port: ${port}`);
+console.log(`Server Ready at http://localhost:4000/graphql`);
