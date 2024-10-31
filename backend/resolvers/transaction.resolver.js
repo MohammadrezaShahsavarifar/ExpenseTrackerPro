@@ -2,12 +2,12 @@ import Transaction from "../models/transaction.model.js";
 
 const transactionResolver = {
   Query: {
-    transactions: async (_, __, contex) => {
+    transactions: async (_, __, context) => {
       try {
-        if (!contex.getUsrizeder()) {
-          throw new Error("Unatho");
+        if (!context.getUser()) {
+          throw new Error("Unauthorized");
         }
-        const userId = await contex.getUser()._id;
+        const userId = await context.getUser()._id;
 
         const transaction = await Transaction.find({ userId });
         return transaction;
