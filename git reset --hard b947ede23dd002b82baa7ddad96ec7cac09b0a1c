@@ -1,0 +1,35 @@
+[33mcommit b947ede23dd002b82baa7ddad96ec7cac09b0a1c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: mohammad-r-sh <ms9647890@gmail.com>
+Date:   Wed Oct 30 08:25:52 2024 -0700
+
+    ui design with react added
+
+[33mcommit 0dbbdf3c8447067bb5108e2c828d63cd877962ae[m
+Author: mohammad-r-sh <ms9647890@gmail.com>
+Date:   Tue Oct 29 11:08:36 2024 -0700
+
+    Bug fixes
+
+[33mcommit a201886abc2294af6ef09a09f2e7af65a2fa24bf[m
+Author: mohammad-r-sh <ms9647890@gmail.com>
+Date:   Tue Oct 29 11:03:51 2024 -0700
+
+    transaction resolver added
+
+[33mcommit 9d31ac3003ae9403edc344c28935328bac29e250[m
+Author: mohammad-r-sh <ms9647890@gmail.com>
+Date:   Tue Oct 29 10:25:33 2024 -0700
+
+    User resolver added
+
+[33mcommit bd974815d3bd51e39f4572459c8bbc07353a2794[m
+Author: mohammad-r-sh <ms9647890@gmail.com>
+Date:   Tue Oct 29 09:02:10 2024 -0700
+
+    PASSPORT configured
+
+[33mcommit 01dd29c97868ed520c61a1ef55bf050f06ff6c50[m
+Author: mohammad-r-sh <ms9647890@gmail.com>
+Date:   Tue Oct 29 08:21:53 2024 -0700
+
+    Project boilerplate setup

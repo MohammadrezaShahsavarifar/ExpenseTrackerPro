@@ -1,5 +1,5 @@
 const transactionTypeDef = `#graphql
-type Trancaction {
+type Transaction {
 _id:ID!
 userId:ID!
 description : String!
@@ -11,14 +11,14 @@ date : String!
 }
 
 type Query {
-transactions : [Trancaction!]
-transaction(transactionId:ID!): Trancaction
+transactions : [Transaction!]
+transaction(transactionId:ID!): Transaction
 
 }
 type Mutation {
-    createTransaction(input : CreateTransactionInput!) : Trancaction!
-    updateTransaction(input : UpdateTransactionInput!) : Trancaction!
-    deleteTransaction(transactionId:ID!) : Trancaction!
+    createTransaction(input : CreateTransactionInput!) : Transaction!
+    updateTransaction(input : UpdateTransactionInput!) : Transaction!
+    deleteTransaction(transactionId:ID!) : Transaction!
 }
 
 input CreateTransactionInput {
