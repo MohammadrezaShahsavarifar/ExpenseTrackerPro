@@ -8,11 +8,13 @@ category: String!
 amount : Float!
 location : String
 date : String!
+user: User!
 }
 
 type Query {
 transactions : [Transaction!]
 transaction(transactionId:ID!): Transaction
+categoryStatistics: [CategoryStatistics!]
 
 }
 type Mutation {
@@ -20,7 +22,10 @@ type Mutation {
     updateTransaction(input : UpdateTransactionInput!) : Transaction!
     deleteTransaction(transactionId:ID!) : Transaction!
 }
-
+type CategoryStatistics {
+    category : String!
+    totalAmount : Float!
+}
 input CreateTransactionInput {
     description : String!
     paymentType: String!
