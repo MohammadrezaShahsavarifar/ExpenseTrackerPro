@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node  backend/index.js",
-    "dev": "nodemon  backend/index.js"
+    "start": "cross-env NODE_ENV=production node backend/index.js",
+    "dev": "cross-env NODE_ENV=development nodemon backend/index.js",
+    "build": "npm install && npm install --prefix frontend && npm install graphql@16.9.0 --prefix frontend && npm run build --prefix frontend"
   },
   "type": "module",
   "keywords": [],
@@ -24,5 +25,8 @@
     "graphql-passport": "^0.6.8",
     "mongoose": "^8.7.3",
     "passport": "^0.7.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
