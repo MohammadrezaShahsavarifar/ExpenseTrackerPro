@@ -44,14 +44,14 @@ const LoginPage = () => {
         <div className="w-full bg-gray-100 min-w-80 sm:min-w-96 flex items-center justify-center">
           <div className="max-w-md w-full p-6">
             <h1 className="text-3xl font-semibold mb-6 text-black text-center">
-              Login
+              ورود
             </h1>
             <h1 className="text-sm font-semibold mb-6 text-gray-500 text-center">
-              Welcome back! Log in to your account
+              خوش آمدید! وارد حساب کاربری خود شوید
             </h1>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <InputField
-                label="Username"
+                label="نام کاربری"
                 id="username"
                 name="username"
                 value={loginData.username}
@@ -59,7 +59,7 @@ const LoginPage = () => {
               />
 
               <InputField
-                label="Password"
+                label="رمز عبور"
                 id="password"
                 name="password"
                 type="password"
@@ -74,15 +74,15 @@ const LoginPage = () => {
 									"
                   disabled={loading}
                 >
-                  {loading ? "Loading..." : "Log In"}
+                  {loading ? "Loading..." : "ورود"}
                 </button>
               </div>
             </form>
             <div className="mt-4 text-sm text-gray-600 text-center">
               <p>
-                {"Don't"} have an account?{" "}
+                حساب کاربری ندارید؟{" "}
                 <Link to="/signup" className="text-black hover:underline">
-                  Sign Up
+                  ثبت‌نام کنید
                 </Link>
               </p>
             </div>

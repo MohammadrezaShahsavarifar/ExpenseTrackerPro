@@ -74,7 +74,7 @@ const TransactionPage = () => {
   return (
     <div className="h-screen max-w-4xl mx-auto flex flex-col items-center">
       <p className="md:text-4xl text-2xl lg:text-4xl font-bold text-center relative z-50 mb-4 mr-4 bg-gradient-to-r from-pink-600 via-indigo-500 to-pink-400 inline-block text-transparent bg-clip-text">
-        Update this transaction
+        این تراکنش را به‌روزرسانی کنید
       </p>
       <form
         className="w-full max-w-lg flex flex-col gap-5 px-3 "
@@ -231,7 +231,7 @@ const TransactionPage = () => {
           type="submit"
           disabled={updatingTransaction}
         >
-          {updateTransaction ? "Updating" : "Update Transaction"}
+          {updateTransaction ? "Updating" : "به‌روزرسانی تراکنش"}
         </button>
       </form>
     </div>

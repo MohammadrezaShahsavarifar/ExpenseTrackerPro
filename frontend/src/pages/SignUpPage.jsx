@@ -53,21 +53,21 @@ const SignUpPage = () => {
         <div className="w-full bg-gray-100 min-w-80 sm:min-w-96 flex items-center justify-center">
           <div className="max-w-md w-full p-6">
             <h1 className="text-3xl font-semibold mb-6 text-black text-center">
-              Sign Up
+              ثبت نام
             </h1>
             <h1 className="text-sm font-semibold mb-6 text-gray-500 text-center">
-              Join to keep track of your expenses
+              به ما بپیوندید تا هزینه‌های خود را پیگیری کنید
             </h1>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <InputField
-                label="Full Name"
+                label="نام کامل"
                 id="name"
                 name="name"
                 value={signUpData.name}
                 onChange={handleChange}
               />
               <InputField
-                label="Username"
+                label="نام کاربری"
                 id="username"
                 name="username"
                 value={signUpData.username}
@@ -75,7 +75,7 @@ const SignUpPage = () => {
               />
 
               <InputField
-                label="Password"
+                label="رمز عبور"
                 id="password"
                 name="password"
                 type="password"
@@ -85,7 +85,7 @@ const SignUpPage = () => {
               <div className="flex gap-10">
                 <RadioButton
                   id="male"
-                  label="Male"
+                  label="مرد"
                   name="gender"
                   value="male"
                   onChange={handleChange}
@@ -93,7 +93,7 @@ const SignUpPage = () => {
                 />
                 <RadioButton
                   id="female"
-                  label="Female"
+                  label="زن"
                   name="gender"
                   value="female"
                   onChange={handleChange}
@@ -107,7 +107,7 @@ const SignUpPage = () => {
                   className="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black  focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={loading}
                 >
-                  {loading ? "Loading..." : "Sign Up"}
+                  {loading ? "Loading..." : "ثبت نام"}
                 </button>
                 {error && (
                   <p className="text-red-500 text-sm mt-2">{error.message}</p>
